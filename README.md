@@ -94,7 +94,7 @@ Open **http://localhost:5173** in your browser.
 │              Flask Backend (port 5000)               │
 │  ┌──────────────┐  ┌──────────────┐  ┌───────────┐  │
 │  │ Graph Builder│  │  SQL Engine  │  │  LLM Proxy│  │
-│  │ nodes+edges  │  │  SQLite DB   │  │  Anthropic│  │
+│  │ nodes+edges  │  │  SQLite DB   │  │  GROQ│  │
 │  └──────────────┘  └──────────────┘  └───────────┘  │
 └─────────────────────────────────────────────────────┘
               │
@@ -213,7 +213,7 @@ o2c-graph-app/
 | Styling | Pure CSS (custom dark theme) |
 | Backend framework | Flask 3 |
 | Database | SQLite (via Python stdlib) |
-| LLM | Claude claude-sonnet-4-20250514 (Anthropic) |
+| LLM | Claude claude-sonnet-4-20250514 (GROQ) |
 | Data format | JSONL → SQLite (auto-ingested) |
 
 ---
@@ -224,7 +224,7 @@ o2c-graph-app/
 → Make sure `python app.py` is running in the `backend/` folder  
 → Check that port 5000 is free: `lsof -i :5000`
 
-**"No module named anthropic"**  
+**"No module named GROQ"**  
 → Run `pip install -r backend/requirements.txt`
 
 **Chat returns guardrail message**  

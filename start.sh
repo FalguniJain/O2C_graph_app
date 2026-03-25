@@ -18,13 +18,13 @@ if ! command -v node &>/dev/null; then
 fi
 
 # Check API key
-if [ -z "$ANTHROPIC_API_KEY" ]; then
+if [ -z "$GROQ_API_KEY" ]; then
     echo ""
-    echo "IMPORTANT: You need an Anthropic API key."
-    read -p "Enter your Anthropic API key (sk-ant-...): " ANTHROPIC_API_KEY
-    export ANTHROPIC_API_KEY
-    echo "export ANTHROPIC_API_KEY='$ANTHROPIC_API_KEY'" >> ~/.bashrc
-    echo "export ANTHROPIC_API_KEY='$ANTHROPIC_API_KEY'" >> ~/.zshrc 2>/dev/null || true
+    echo "IMPORTANT: You need an GROQ API key."
+    read -p "Enter your GROQ API key (sk-ant-...): " GROQ_API_KEY
+    export GROQ_API_KEY
+    echo "export GROQ_API_KEY='$GROQ_API_KEY'" >> ~/.bashrc
+    echo "export GROQ_API_KEY='$GROQ_API_KEY'" >> ~/.zshrc 2>/dev/null || true
 fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -39,7 +39,7 @@ fi
 
 echo "[3/3] Starting servers..."
 echo ""
-echo "Backend: http://localhost:5000"
+echo "Backend: https://o2c-backend-tjki.onrender.com"
 echo "Frontend: http://localhost:5173"
 echo ""
 echo "Press Ctrl+C to stop all servers"

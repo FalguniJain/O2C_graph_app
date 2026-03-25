@@ -6,7 +6,7 @@ import StatsBar from './components/StatsBar'
 import NodeModal from './components/NodeModal'
 import './App.css'
 
-const API_BASE = 'http://localhost:5000/api'
+const API_BASE = 'https://o2c-backend-tjki.onrender.com/api'
 
 export default function App() {
   const [graphData, setGraphData] = useState({ nodes: [], edges: [] })

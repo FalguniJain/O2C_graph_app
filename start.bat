@@ -21,12 +21,12 @@ if errorlevel 1 (
 )
 
 :: Check API key
-if "%ANTHROPIC_API_KEY%"=="" (
+if "%GROQ_API_KEY%"=="" (
     echo.
-    echo IMPORTANT: Set your Anthropic API key first!
+    echo IMPORTANT: Set your GROQ API key first!
     echo.
-    set /p ANTHROPIC_API_KEY="Enter your Anthropic API key (sk-ant-...): "
-    setx ANTHROPIC_API_KEY "%ANTHROPIC_API_KEY%" >nul
+    set /p GROQ_API_KEY="Enter your GROQ API key (sk-ant-...): "
+    setx GROQ_API_KEY "%GROQ_API_KEY%" >nul
 )
 
 echo.
@@ -44,7 +44,7 @@ cd ..
 
 echo [3/3] Starting servers...
 echo.
-echo Backend will start on: http://localhost:5000
+echo Backend will start on: https://o2c-backend-tjki.onrender.com
 echo Frontend will start on: http://localhost:5173
 echo.
 echo Opening app in browser in 5 seconds...
