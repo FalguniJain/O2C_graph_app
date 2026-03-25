@@ -19,18 +19,18 @@ Built with React + D3 (frontend), Flask + SQLite (backend), and Claude (LLM quer
 ### Prerequisites
 - Python 3.9+
 - Node.js 18+
-- An **Anthropic API key** — get one free at https://console.anthropic.com
+- A **GROQ API key** — get one free at https://console.groq.com
 
 ### Step 1 — Set your API key
 
 **Windows:**
 ```
-set ANTHROPIC_API_KEY=sk-ant-your-key-here
+set GROQ_API_KEY=gsk-your-key-here
 ```
 
 **Mac / Linux:**
 ```bash
-export ANTHROPIC_API_KEY=sk-ant-your-key-here
+export GROQ_API_KEY=gsk-your-key-here
 ```
 
 ### Step 2 — Place the dataset
@@ -239,3 +239,4 @@ o2c-graph-app/
 ## 📝 License
 
 Built for Dodge AI Forward Deployed Engineer assignment.
+# O2C_graph_app
